@@ -15,6 +15,7 @@ Doesn't need root privilege.
 
 ```
 git clone https://github.com/agentlans/venver
+cd venver
 chmod +x *ve *.sh # Make the scripts executable
 ./SetupVenver.sh # to install
 ./RemoveVenver.sh # to remove the program
