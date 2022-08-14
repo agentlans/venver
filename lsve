@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+if [ -d $VENV ]; then
+	ls $VENV
+else
+	echo "$VENV directory not found. Please run SetupVenver.sh."
+fi
+

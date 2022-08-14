@@ -1,0 +1,16 @@
+#!/usr/bin/bash
+
+if [ $# -eq 0 ]; then
+	# If no arguments, then deactivate environment
+	deactivate
+else
+	# Switch to another virtual environment
+	ACTIVATE=$VENV/$1/bin/activate
+	if [ -f $ACTIVATE ]; then
+		source $ACTIVATE
+	else
+		( echo "ERROR: \"$1\" virtual environment not found" )
+		#exit 1 .)
+	fi
+fi
+

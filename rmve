@@ -1,0 +1,15 @@
+#!/usr/bin/bash
+
+delete_ve() {
+	if [ ! -d $VENV/$1 ]; then
+		echo "ERROR: \"$1\" virtual environment not found."
+		exit 1
+	fi
+	rm -rf $VENV/$1
+}
+
+for VE in "$@"
+do
+    delete_ve $VE
+done
+
