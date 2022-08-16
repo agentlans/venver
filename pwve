@@ -2,11 +2,11 @@
 
 # Prints out the name of the present working virtual environment (PWVE)
 
-PY=`which python`
+PY=`which python3`
 echo $PY | grep ~/.venv > /dev/null
 if [ $? -eq 0 ]; then
 	# Get the directory the Python is in
-	echo $PY | sed -E 's!^.*/\.venv/([^/]*)/bin/python$!\1!'
+	echo $PY | sed -E 's!^.*/\.venv/([^/]*)/bin/python3$!\1!'
 else
 	# Not in any virtual environment
 	echo ""

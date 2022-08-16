@@ -3,7 +3,7 @@
 make_ve() {
 	VENV_DIR=$VENV/$1
 	mkdir -p $VENV_DIR
-	python -m venv $VENV_DIR
+	python3 -m venv $VENV_DIR
 }
 
 for VE in "$@"
